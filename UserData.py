@@ -16,13 +16,8 @@ for i in range(10):
 	rand=random.randint(240000,250000)
 	#print(rand)
 	#username='suraj19'
-	#token1='9d98deacd0b4b3b3efdfb254c6af5c931ec237c5'
-	#token2='808fd391c6908d19ceca268a311f3cb53a92b4e0'
-	#Naveen's token: '19d3613f87d6be4b31d6480ac9aa6692aa47cd47'
-	#Naveen's new token: '8103f0da6d0cd4dda76ba3960fd635ad82a74e34'
-	#Vivek's Token: '0d494f03e8aeab180598b9f6cfd6c53ee56b9190'
-	#Suraj New Token: 'bcda4a9669f4c0bba564f7d8d90bdbe6be90ef3d'
-	headers = {'Authorization': '9d98deacd0b4b3b3efdfb254c6af5c931ec237c5 %s'}
+	
+	headers = {'Authorization': 'Authentication_token %s'}
 	file_url1="https://api.github.com/user/"+str(rand)+":id"
 	response1 = requests.get(file_url1, headers=headers)
 	jsonToPython = response1.json()	#coverting json response to a python string
